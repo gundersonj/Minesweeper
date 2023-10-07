@@ -1,6 +1,6 @@
 var grid = document.getElementById("grid");
 var mineCount = document.getElementById("mineCount");
-var testMode = true; //Turn this variable to true to see where the mines are
+var testMode = false; //Turn this variable to true to see where the mines are
 generateGrid();
 
 function generateGrid() {
@@ -61,7 +61,12 @@ function clickCell(cell) {
   //Check if the end-user clicked on a mine
   if (cell.getAttribute("data-mine")=="true") {
     revealMines();
-    alert("Game Over");
+    var gameOverBox = confirm("Game Over!\n\nWould you like to play again?");
+    if ((gameOverBox) == true) {
+      generateGrid();
+    } else {
+      alert("Thanks for playing!");
+    }
   } else {
     cell.className="clicked";
     //Count and display the number of adjacent mines

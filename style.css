@@ -1,5 +1,5 @@
 BODY {
-    background: #00FFFF;
+    background: #E0FFFF;
     color: #FF0000;
     font-family: courier new;
     text-align: center;
@@ -24,10 +24,10 @@ BODY {
   }
   
   #grid TR TD{
-    border:1px solid #7FFFD4;
-    background: #00FF7F;
-    width: 25px;
-    height: 25px;
+    border:1px solid #8FBC8B;
+    background: #8FBC8B;
+    width: 35px;
+    height: 35px;
     text-align: center;
   }
   
@@ -41,7 +41,7 @@ BODY {
   
   BUTTON {
     margin: 12px;
-    background-color: #00FF7F;
+    background-color: #8FBC8B;
     color: #FF0000;
     padding: 10px 20px;
     text-align: center;
